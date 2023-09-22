@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    {% for result in results %}
+    <h2>Results from File: {{ result.filename }}</h2>
+    <p>Most Transactions Branch: {{ result.most_transactions_branch }}</p>
+    <p>Transaction Count: {{ result.transaction_count }}</p>
+    <p>Duplicate Particulars: {{ result.duplicate_particulars }}</p>
+    <hr>
+    {% endfor %}
+    <a href="/">Upload another file</a>
+</body>
+</html>
